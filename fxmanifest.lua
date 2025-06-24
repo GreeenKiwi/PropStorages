@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'GreeenKiwi'
-description 'Storage System for OxTarget & OxInventory'
-version '1.0.0'
+author 'KIWI'
+description 'Storage System w/ oxTarget'
+version '1.1.0'
 
 lua54 "yes"
 
@@ -18,7 +18,8 @@ client_scripts {
 }
 
 server_scripts {
-    'server/server.lua'
+    'server/server.lua',
+    'server/servercallback.lua'
 }
 
 dependencies {
@@ -27,7 +28,4 @@ dependencies {
     'ox_target',
     'ox_lib',
     'vms_clothestore'
-    --'CodeForge-ClotheShop-ResourceName'
-    --'AK47-ClotheShop-ResourceName'
-    --'RCore-ClotheShop-ResourceName'    
 }
